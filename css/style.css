@@ -1,0 +1,80 @@
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icons/circle-uncheck.svg") no-repeat center center;
+  background-size: 100% 100%;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+}
+
+/* 체크된 상태 */
+input[type="checkbox"]:checked {
+  background-image: url("../images/icons/circle-check.svg");
+}
+
+/* hover 효과 */
+input[type="checkbox"]:hover{
+  filter: brightness(1.05s);
+}
+
+/* focus 접근성 개선 */
+input[type="checkbox"]:focus-visible{
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+}
+
+/* disabled 상태 */
+input[type="checkbox"]:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+body{
+  font-family: "Noto sans KR", sans-serif;
+  margin: 30px;
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.agreement{
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 700px;
+}
+
+.agreement-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.agreement-header .left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-check-box input{
+  margin-right: 6px;
+}
+
+.all{
+  color: #007aff;
+  text-decoration: none;
+  font-size: 14px;
+}

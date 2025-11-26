@@ -1,0 +1,112 @@
+/* 기본 체크박스 스타일 초기화 및 설정 */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icons/circle-uncheck.svg") no-repeat center center;
+  background-size: 100% 100%;
+  cursor: pointer;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+}
+
+/* 체크된 상태 */
+input[type="checkbox"]:checked {
+  background-image: url("../images/icons/circle-check.svg");
+}
+
+/* hover 효과 */
+input[type="checkbox"]:hover {
+  filter: brightness(1.05);
+}
+
+/* focus 접근성 개선 */
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid #22c55e; /* 초록색 포커스 테두리 */
+  outline-offset: 2px;
+}
+
+/* disabled 상태 */
+input[type="checkbox"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif;
+  margin: 30px;
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.agreement {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 700px;
+}
+
+.agreement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.agreement-header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-checkbox input {
+  margin-right: 6px;
+}
+
+.all {
+  color: #007aff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.child {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.scroll-area {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #fafafa;
+}
+
+.scroll-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+ul {
+  margin-left: 18px;
+  list-style-type: disc;
+}

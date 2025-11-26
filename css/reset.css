@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*border를 주더라도 진짜 width 값을 적용시킬 수 있음.*/
+}
+
+img{
+    max-width: 100%;
+}
+
+.blind {
+            position: absolute;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+        }
+
+button{
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong{
+    font-weight: inherit;
+}
+/* 기본적으로 굵어지는 글씨들 */
+
+i, em{
+    font-style: inherit;
+}
+/* 기본적으로 기울어지는 글씨들 */
